@@ -44,3 +44,17 @@ string3 = input()
 print(string3)
 print(string2)
 print(string3)
+
+
+"""
+  # print('Java')
+# print('Ruby')
+# print('Scala')
+print('Python', end='+')  # print('C++')
+# print('GO')
+print('C#', end='=')  # print('C')
+print('awesome')
+# finish
+  
+
+"""
