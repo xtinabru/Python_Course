@@ -202,7 +202,7 @@ print(
 """
 
 # ex15 train
-
+"""
 seat_number = int(input())
 
 a = seat_number // 4
@@ -211,3 +211,154 @@ if seat_number % 4 == 0:
     print(a)
 else:
     print(a + 1)
+    
+    
+#a = int(input())
+print((a + 3) // 4)
+"""
+# ex16
+"""
+num = 87
+a = num % 10
+b = num // 10
+print(a)
+print(b)
+"""
+
+# ex17 - 3 digits
+
+"""
+num = 754
+a = num % 10
+b = (num % 100) // 10
+c = num // 100
+print(a)
+print(b)
+print(c)
+"""
+
+"""
+NOTA BENE
+
+Последняя цифра: (num % 101) // 100;
+Предпоследняя цифра: (num % 102) // 101;
+Предпредпоследняя цифра: (num % 103) // 102;
+.....
+Вторая цифра: (num % 10n-1) // 10n-2;
+Первая цифра: (num % 10n) // 10n-1.
+
+# FORMULA
+
+(num // 10**(n - i)) % 10
+
+num = our number
+n = the quantity of numbers 
+i = the number of digit
+
+"""
+# (1234 // 10 ** (4 - 1)) % 10 - first
+"""
+# to find the second
+
+num = 1234
+n = 4
+i = 2
+print((num // 10 ** (n - i)) % 10)
+
+# to find the second
+num = 1934
+n = 4
+i = 2
+print((num // 10 ** (n - i)) % 10)
+
+# to find the third
+num = 2379
+n = 4
+i = 3
+print((num // 10 ** (n - i)) % 10)
+"""
+# FINAL PART
+
+# ex18
+"""
+num = int(input())
+first_digit = num // 10
+second_digit = num % 10
+
+print("Число десятков =", first_digit)
+print("Число единиц =", second_digit)
+"""
+
+# ex19 sum
+"""
+num = int(input())
+first = num // 10
+second = num % 10
+sum = first + second
+print(sum)
+"""
+
+# ex20 transfer
+"""
+num = int(input())
+first = num // 10
+second = num % 10
+
+result = second * 10 + first
+print("What we get:", result)
+"""
+
+# ex21 3digits with sep... 789
+
+"""
+num = int(input())
+third = num % 10
+second = (num // 10) % 10
+first = num // 100
+
+print(first, second, third, sep=",")
+"""
+
+# ex 22 write a sum and multiplication of 3-digit number
+"""
+num = int(input())
+
+first = num // 100
+second = (num // 10) % 10
+third = num % 10
+
+sum = first + second + third
+multiplication = first * second * third
+
+print("Сумма цифр =", sum)
+print("Произведение цифр =", multiplication)
+"""
+
+# ex23  - abc,acb,bac,bca,cab,cba
+"""
+num = int(input())
+
+a = num // 100
+b = (num // 10) % 10
+c = num % 10
+
+print(a, b, c, sep="")
+print(a, c, b, sep="")
+print(b, a, c, sep="")
+print(b, c, a, sep="")
+print(c, a, b, sep="")
+print(c, b, a, sep="")
+"""
+# ex24 3281
+
+num = int(input())
+
+first = num // 1000
+second = (num // 100) % 10
+third = (num // 10) % 10
+fourth = num % 10
+
+print("Цифра в позиции тысяч равна", first)
+print("Цифра в позиции сотен равна", second)
+print("Цифра в позиции десятков равна", third)
+print("Цифра в позиции единиц равна", fourth)
