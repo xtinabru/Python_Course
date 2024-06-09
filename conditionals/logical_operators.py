@@ -4,6 +4,12 @@
 # or - logical addition
 # not - logical negotion
 
+# Priority
+# ⚠️ not
+# and
+# or
+
+
 """ 💚 ex1 AND 💚"""
 
 # There are 2 conditions
