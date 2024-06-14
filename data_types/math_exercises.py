@@ -96,10 +96,10 @@
 
 #  Ex 7 Regular polygon 💜
 
-from math import tan, pi
+# from math import tan, pi
 
-n = float(input())
-a = float(input())
+# n = float(input())
+# a = float(input())
 
-S = (n * a**2) / (4 * (tan(pi / n)))
-print(S)
+# S = (n * a**2) / (4 * (tan(pi / n)))
+# print(S)
