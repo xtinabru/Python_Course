@@ -25,3 +25,17 @@
 
 # print("a" in s) #TRUE
 # print("z" in s) # FALSE
+
+# AS AN ACURATE LIST 🫧
+
+# print("ab" in "abc") #TRUE
+# print("ac" in "abc")# FALSE
+
+# MIND THE REGISTER 🫧
+# s = "Alpha"
+# print("p" in s) # TRUE
+# print("P" in s) # FALSE
+
+# 🫧
+# IF s1 is inside s2 => s1 is a substring of s2
+# So IN checks whether one string is a substring for another one
