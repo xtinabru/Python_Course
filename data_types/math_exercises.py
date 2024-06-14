@@ -67,8 +67,29 @@
 
 # Ex 5 💙 FLOOR AND CEIL
 
-from math import floor, ceil
+# from math import floor, ceil
 
-x = float(input())
+# x = float(input())
 
-print(floor(x) + ceil(x))
+# print(floor(x) + ceil(x))
+
+# Ex 6 🩵 Quadratic equation 🌶️🌶️
+
+# from math import sqrt
+
+# a = float(input())
+# b = float(input())
+# c = float(input())
+
+# D = b**2 - 4 * a * c
+
+# if D < 0:
+#     print("Нет корней")
+# elif D == 0:
+#     r = -b / (2 * a)
+#     print(r)
+# else:
+#     r1 = (-b - sqrt(D)) / 2 * a
+#     r2 = (-b + sqrt(D)) / 2 * a
+#     print(r1)
+#     print(r2)
