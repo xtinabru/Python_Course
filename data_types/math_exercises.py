@@ -93,3 +93,13 @@
 #     r2 = (-b + sqrt(D)) / 2 * a
 #     print(r1)
 #     print(r2)
+
+#  Ex 7 Regular polygon 💜
+
+from math import tan, pi
+
+n = float(input())
+a = float(input())
+
+S = (n * a**2) / (4 * (tan(pi / n)))
+print(S)
