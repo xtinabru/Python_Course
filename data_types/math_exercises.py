@@ -24,7 +24,7 @@
 # print(S)
 # print(C)
 
-# Ex 2 💛
+# Ex 3 💛
 # Average values
 
 # 1) arithmetic mean of numbers a and b:
@@ -39,17 +39,28 @@
 # 4) mean square of numbers a and b:
 # sqrt of (a**2 + b**2)/2
 
-from math import pow, sqrt
+# from math import pow, sqrt
 
-a = float(input())
-b = float(input())
+# a = float(input())
+# b = float(input())
 
-arithm = (a + b) / 2
-geometr = sqrt(a * b)
-harm = (2 * a * b) / (a + b)
-sqr = sqrt((a**2 + b**2) / 2)
+# arithm = (a + b) / 2
+# geometr = sqrt(a * b)
+# harm = (2 * a * b) / (a + b)
+# sqr = sqrt((a**2 + b**2) / 2)
 
-print(arithm)
-print(geometr)
-print(harm)
-print(sqr)
+# print(arithm)
+# print(geometr)
+# print(harm)
+# print(sqr)
+
+# Ex 4 💚
+# Trigonometric expression
+
+from math import sin, cos, tan, radians
+
+x = float(input())
+x_rad = radians(x)
+
+result = sin(x_rad) + cos(x_rad) + tan(x_rad) ** 2
+print(result)
