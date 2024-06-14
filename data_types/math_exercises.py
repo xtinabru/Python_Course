@@ -57,10 +57,18 @@
 # Ex 4 💚
 # Trigonometric expression
 
-from math import sin, cos, tan, radians
+# from math import sin, cos, tan, radians
+
+# x = float(input())
+# x_rad = radians(x)
+
+# result = sin(x_rad) + cos(x_rad) + tan(x_rad) ** 2
+# print(result)
+
+# Ex 5 💙 FLOOR AND CEIL
+
+from math import floor, ceil
 
 x = float(input())
-x_rad = radians(x)
 
-result = sin(x_rad) + cos(x_rad) + tan(x_rad) ** 2
-print(result)
+print(floor(x) + ceil(x))
