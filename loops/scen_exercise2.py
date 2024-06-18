@@ -89,32 +89,44 @@
 
 # Ex 8 Alternating sum 🦑
 
-n = int(input())
-flag = True
-
-total = 0
-
-for i in range(1, n + 1):
-    if flag == True:
-        total += i
-    elif flag == False:
-        total -= i
-    flag = not flag
-
-
-print(total)
-
-
 # n = int(input())
 # flag = True
 
 # total = 0
 
 # for i in range(1, n + 1):
-#     if flag:
+#     if flag == True:
 #         total += i
-#     else:
+#     elif flag == False:
 #         total -= i
 #     flag = not flag
 
+
 # print(total)
+
+# Ex 9 Largest numbers 🌶️🌶️
+
+# n = int(input())
+
+# largest = 1
+# second = 0
+
+# for i in range(1, n + 1):
+#     number = int(input())
+#     if number > largest:
+#         second = largest
+#         largest = number
+#     elif number > second:
+#         second = number
+
+# print(largest)
+# print(second)
+
+# Ex 10 Only even numbers 🌶️
+
+n = int(input())
+
+for i in range(10):
+    number = int(input())
+
+print(number)
