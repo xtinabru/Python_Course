@@ -41,7 +41,6 @@
 
 # Ex 4 Sum of numbers 2 🟢
 
-
 # n = int(input())
 
 # total = 0
@@ -50,5 +49,72 @@
 #     last_digit = (i**2) % 10
 #     if last_digit == 2 or last_digit == 5 or last_digit == 8:
 #         total += i
+
+# print(total)
+
+# Ex 5 Factorial 🦑
+
+# n = int(input())
+
+# total = 1
+
+# for i in range(1, n + 1):
+#     total *= i
+
+# print(total)
+
+# Ex 6 🦑
+
+# total = 1
+
+# for i in range(10):
+#     digit = int(input())
+#     if digit != 0:
+#         total *= digit
+
+# print(total)
+
+# Ex 7 Sum of divisors 🦑
+
+# n = int(input())
+
+# total = 0
+
+# for i in range(1, n + 1):
+#     if n % i == 0:
+#         print(i, n % i)
+#         total += i
+
+# print(total)
+
+# Ex 8 Alternating sum 🦑
+
+n = int(input())
+flag = True
+
+total = 0
+
+for i in range(1, n + 1):
+    if flag == True:
+        total += i
+    elif flag == False:
+        total -= i
+    flag = not flag
+
+
+print(total)
+
+
+# n = int(input())
+# flag = True
+
+# total = 0
+
+# for i in range(1, n + 1):
+#     if flag:
+#         total += i
+#     else:
+#         total -= i
+#     flag = not flag
 
 # print(total)
