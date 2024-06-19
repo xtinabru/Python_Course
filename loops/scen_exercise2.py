@@ -124,9 +124,60 @@
 
 # Ex 10 Only even numbers 🌶️
 
+# flag = True
+
+# for i in range(10):
+#     number = int(input())
+#     if number % 2 != 0:
+#         flag = False
+
+# if flag:
+#     print("YES")
+# else:
+#     print("NO")
+
+# Ex 11 Fibonacci Sequence 🌶️
+
+# n = int(input())
+
+# first = 1
+# second = 1
+
+# if n == 1:
+#     print(first)
+# elif n == 2:
+#     print(first, second)
+# elif n > 2:
+#     print(first, second, end=" ")
+#     for i in range(2, n):
+#         first, second = second, first + second
+#         print(second, end=" ")
+# print()
+
+
+# # or
+
+# n = int(input())
+# a, b = 1, 1
+
+# for i in range(n):
+#     print(a, end=" ")
+#     a, b = b, a + b
+
+
+# or
+# num = int(input())
+# a1 = 0
+# a2 = 1
+# for i in range(1, num + 1):
+#     a3 = a1 + a2
+#     print(a3, end=' ')
+#     a2 = a1
+#     a1 = a3
+
+
 n = int(input())
-
-for i in range(10):
-    number = int(input())
-
-print(number)
+f1, f2 = 1, 1
+for i in range(n):
+    print(f1, end=" ")
+    f1, f2 = f2, f1 + f2
