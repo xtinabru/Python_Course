@@ -68,3 +68,29 @@
 # print(total)
 
 # Ex 7
+
+
+# n = int(input())
+
+# count = 0
+
+# while n > 0:
+#     if n >= 25:
+#         count += n // 25
+#         n %= 25
+#     elif n >= 10:
+#         count += n // 10
+#         n %= 10
+#     elif n >= 5:
+#         count += n // 5
+#         n %= 5
+#     else:
+#         count += n
+#         n = 0
+
+# print(count)
+
+# or
+
+# n = int(input())
+# print (n // 25 + (n % 25) // 10 + (n % 25 % 10) // 5 + (n % 25 % 10 % 5))
