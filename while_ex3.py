@@ -41,9 +41,33 @@
 # Ex 4  💠💠💠
 # Напишите программу, которая меняет порядок цифр числа на обратный.
 
-n = int(input())
+# n = int(input())
 
-while n > 0:
-    last_digit = n % 10
-    print(last_digit, end="")
-    n = n // 10
+# while n > 0:
+#     last_digit = n % 10
+#     print(last_digit, end="")
+
+
+# Ex 5 max, min
+# Find the maximum and the mininum digit of the number
+
+# Ввод числа
+n = input()
+
+# Преобразование строки в список цифр
+digits = [int(digit) for digit in n]
+
+# Инициализация максимальной и минимальной цифр первой цифрой
+max_digit = digits[0]
+min_digit = digits[0]
+
+# Перебор всех цифр и определение максимальной и минимальной
+for digit in digits:
+    if digit > max_digit:
+        max_digit = digit
+    if digit < min_digit:
+        min_digit = digit
+
+# Вывод результата
+print(f"Максимальная цифра равна {max_digit}")
+print(f"Минимальная цифра равна {min_digit}")
