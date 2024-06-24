@@ -208,19 +208,33 @@
 # Напишите программу, которая определяет,является ли последовательность его цифр при просмотре
 # справа налево упорядоченной по неубыванию.
 
-n = int(input())
+# n = input()
 
-n_str = str(n)
+# is_non_decreasing = True
 
+# for i in range(len(n) - 1):
+#     if n[i] < n[i + 1]:
+#         is_non_decreasing = False
+#         break
 
-is_non_decreasing = True
+# if is_non_decreasing:
+#     print("YES")
+# else:
+#     print("NO")
 
-for i in range(len(n_str) - 1):
-    if n_str[i] < n_str[i + 1]:
-        is_non_decreasing = False
-        break
+# or
 
-if is_non_decreasing:
-    print("YES")
-else:
-    print("NO")
+# n = input()
+# is_non_decreasing = True
+# i = 0
+
+# while i < len(n) - 1:
+#     if n[i] > n[i + 1]:
+#         is_non_decreasing = False
+#         break
+#     i += 1
+
+# if is_non_decreasing:
+#     print("YES")
+# else:
+#     print("NO")
