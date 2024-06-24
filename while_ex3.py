@@ -48,23 +48,84 @@
 #     print(last_digit, end="")
 
 
-# Ex 5 max, min
+# Ex 5 max, min 💠💠💠
 # Find the maximum and the mininum digit of the number
 
-n = int(input())  # 1230
-max_digit = 0
-min_digit = n % 10
+# n = int(input())  # 1230
+# max_digit = 0
+# min_digit = n % 10
 
-while n != 0:
-    last_digit = n % 10
+# while n != 0:
+#     last_digit = n % 10
 
-    if last_digit > max_digit:
-        max_digit = last_digit
+#     if last_digit > max_digit:
+#         max_digit = last_digit
 
-    if last_digit <= min_digit:
-        min_digit = last_digit
+#     if last_digit <= min_digit:
+#         min_digit = last_digit
 
-    n //= 10
+#     n //= 10
 
-print("Максимальная цифра равна", max_digit)
-print("Минимальная цифра равна", min_digit)
+# print("Максимальная цифра равна", max_digit)
+# print("Минимальная цифра равна", min_digit)
+
+
+# Ex 6
+# n = int(input())
+
+# total = 0
+# quantity = 0
+# multiplication = 1
+# original_n = n
+
+# # sum
+# while n > 0:
+#     total += n % 10
+#     n = n // 10
+
+# # quantity
+# n = original_n
+# while n > 0:
+#     n = n // 10
+#     quantity += 1
+
+# # multiplication
+# n = original_n
+# while n > 0:
+#     last_digit = n % 10
+#     multiplication *= last_digit
+#     n = n // 10
+
+# # arithmetic mean
+# ar_mean = total / quantity
+
+# # first digit
+# first_digit = original_n
+# while first_digit >= 10:
+#     first_digit = first_digit // 10
+
+# # last digit
+# last_digit = original_n % 10
+
+# # sum of first and last
+# sum_first_last = first_digit + last_digit
+
+# print(total)
+# print(quantity)
+# print(multiplication)
+# print(ar_mean)
+# print(first_digit)
+# print(sum_first_last)
+
+
+# Ex 6 The quantity of 5
+
+# n = int(input())
+
+# total = 0
+# while 0 < n <= 5:
+#     if n == 5:
+#         total += 1
+#     n = int(input())
+
+# print(total)

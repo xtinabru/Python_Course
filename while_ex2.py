@@ -44,15 +44,15 @@
 
 # Ex 5 The sum of numbers 🟢
 
-# n = int(input())
+n = int(input())
 
-# total = 0
+total = 0
 
-# while n >= 0:
-#     total += n
-#     n = int(input())
+while n >= 0:
+    total += n
+    n = int(input())
 
-# print(total)
+print(total)
 
 
 # Ex 6 The quantity of 5
