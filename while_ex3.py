@@ -51,23 +51,20 @@
 # Ex 5 max, min
 # Find the maximum and the mininum digit of the number
 
-# Ввод числа
-n = input()
+n = int(input())  # 1230
+max_digit = 0
+min_digit = n % 10
 
-# Преобразование строки в список цифр
-digits = [int(digit) for digit in n]
+while n != 0:
+    last_digit = n % 10
 
-# Инициализация максимальной и минимальной цифр первой цифрой
-max_digit = digits[0]
-min_digit = digits[0]
+    if last_digit > max_digit:
+        max_digit = last_digit
 
-# Перебор всех цифр и определение максимальной и минимальной
-for digit in digits:
-    if digit > max_digit:
-        max_digit = digit
-    if digit < min_digit:
-        min_digit = digit
+    if last_digit <= min_digit:
+        min_digit = last_digit
 
-# Вывод результата
-print(f"Максимальная цифра равна {max_digit}")
-print(f"Минимальная цифра равна {min_digit}")
+    n //= 10
+
+print("Максимальная цифра равна", max_digit)
+print("Минимальная цифра равна", min_digit)
