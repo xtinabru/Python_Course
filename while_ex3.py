@@ -70,7 +70,7 @@
 # print("Минимальная цифра равна", min_digit)
 
 
-# Ex 6
+# Ex 6 💠💠💠
 # n = int(input())
 
 # total = 0
@@ -118,14 +118,62 @@
 # print(sum_first_last)
 
 
-# Ex 6 The quantity of 5
+# OR
+
+
+# n = int(input())
+# total = 0
+# count = 0
+# product = 1
+# len_str = len(str(n))
+# first_number = (n // 10 ** (len_str - 1)) % 10
+# summ_first_and_last = first_number + n % 10
+
+# while n:
+#     last_digit = n % 10
+
+#     total += last_digit
+
+#     count += 1
+
+#     product *= last_digit
+
+#     n //= 10
+
+# print(total, count, product, total / len_str, first_number, summ_first_and_last, sep="\n")
+
+# Ex 7  💠💠💠 Напишите программу, которая определяет его вторую (с начала) цифру.
 
 # n = int(input())
 
-# total = 0
-# while 0 < n <= 5:
-#     if n == 5:
-#         total += 1
-#     n = int(input())
+# num_digits = len(str(n))
 
-# print(total)
+# if num_digits < 2:
+#     print("There's no 2 digits.")
+# else:
+#     second_digit = (n // 10 ** (num_digits - 2)) % 10
+#     print(second_digit)
+
+# Ex 8 💠💠💠 Напишите программу, которая определяет, состоит ли указанное число из одинаковых цифр.
+
+n = int(input())
+
+n_to_string = str(n)  # Преобразуем число в строку для удобства доступа к каждой цифре
+
+first_digit = n_to_string[0]  # Получаем первую цифру
+
+equal_digit = True  # Устанавливаем флаг на True (предполагаем, что все цифры одинаковы)
+# т.е. мы делаем предположение, будто бы они равны
+
+index = 1
+
+while index < len(n_to_string):
+    if n_to_string[index] != first_digit:
+        equal_digit = False
+        break
+    index += 1
+
+if equal_digit:
+    print("YES")
+else:
+    print("NO")
