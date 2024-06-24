@@ -156,24 +156,71 @@
 
 # Ex 8 💠💠💠 Напишите программу, которая определяет, состоит ли указанное число из одинаковых цифр.
 
+# n = int(input())
+
+# n_to_string = str(n)  # Преобразуем число в строку для удобства доступа к каждой цифре
+
+# first_digit = n_to_string[0]  # Получаем первую цифру
+
+# equal_digit = True  # Устанавливаем флаг на True (предполагаем, что все цифры одинаковы)
+# # т.е. мы делаем предположение, будто бы они равны
+
+# index = 1
+
+# while index < len(n_to_string):
+#     if n_to_string[index] != first_digit:
+#         equal_digit = False
+#         break
+#     index += 1
+
+# if equal_digit:
+#     print("YES")
+# else:
+#     print("NO")
+
+
+# OR
+
+
+# n = int(input())
+
+# n_to_string = str(n)
+
+# first_digit = n_to_string[0]
+
+# equal_digit = True
+
+# index = 1
+
+# while index < len(n_to_string):
+#     if n_to_string[index] != first_digit:
+#         equal_digit = False
+#         break
+#     index += 1
+
+# if equal_digit:
+#     print("YES")
+# else:
+#     print("NO")
+
+
+# Ex 9 💠💠💠
+# Напишите программу, которая определяет,является ли последовательность его цифр при просмотре
+# справа налево упорядоченной по неубыванию.
+
 n = int(input())
 
-n_to_string = str(n)  # Преобразуем число в строку для удобства доступа к каждой цифре
+n_str = str(n)
 
-first_digit = n_to_string[0]  # Получаем первую цифру
 
-equal_digit = True  # Устанавливаем флаг на True (предполагаем, что все цифры одинаковы)
-# т.е. мы делаем предположение, будто бы они равны
+is_non_decreasing = True
 
-index = 1
-
-while index < len(n_to_string):
-    if n_to_string[index] != first_digit:
-        equal_digit = False
+for i in range(len(n_str) - 1):
+    if n_str[i] < n_str[i + 1]:
+        is_non_decreasing = False
         break
-    index += 1
 
-if equal_digit:
+if is_non_decreasing:
     print("YES")
 else:
     print("NO")
