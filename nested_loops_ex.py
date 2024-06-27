@@ -38,6 +38,7 @@
 # # 3 3 6
 # # 3 4 7
 
+# Ex 3 💚
 
 # counter = 0
 # for i in range(99, 102):
@@ -63,3 +64,87 @@
 # while t0>0 --------------
 # for...----------
 # print 8
+
+# T1 TABLE 🧱
+
+# Number n (n <= 9). Write a program that prints a table of size n×3 consisting of a given number (the numbers are separated by one space).
+
+# n = int(input())
+
+# for i in range(n):
+#     for j in range(3):
+#         print(n, end=" ")
+#     print()
+
+# T2 TABLE 2 📗
+
+# Number n (n <= 9). Write a program that prints a table of size n X 5, where in the line i there is number i
+
+# n = int(input())
+
+# for i in range(n):
+#     for j in range(5):
+#         print(i + 1, end=" ")
+#     print()
+
+# 3
+
+# 1 1 1 1 1
+# 2 2 2 2 2
+# 3 3 3 3 3
+
+# T3 TABLE 3 📕
+
+# Number n (n <= 9). Write a program that prints a table of sum from 1 to n (incl)
+# We mean the addition table from 1 to 9
+
+# n = int(input())
+
+# for i in range(1, n + 1):
+#     for j in range(1, 10):
+#         print(i, "+", j, "=", i + j)
+#     print()
+
+# 1
+
+# 1 + 1 = 2
+# 1 + 2 = 3
+# 1 + 3 = 4
+# 1 + 4 = 5
+# 1 + 5 = 6
+# 1 + 6 = 7
+# 1 + 7 = 8
+# 1 + 8 = 9
+# 1 + 9 = 10
+
+# T5 ⭐️ Star Triangle 🌶️🌶️
+
+# Given an odd ( %2 != 0) natural number n.
+
+# Write a program that prints an isosceles star triangle with base n as shown in the example:
+
+# n = int(input())
+
+# for i in range(n // 2 + 2):
+#     for j in range(i):
+#         print("*", end="")
+#     print()
+# for l in range(n // 2 + 1, 0, -1):
+#     for k in range(l - 1):
+#         print("*", end="")
+#     print()
+
+# *
+# **
+# ***
+# **
+# *
+
+# T6 Numerical triangle 🍕
+
+# n = int(input())
+
+# for i in range(1, n + 1):
+#     for j in range(1, i + 1):
+#         print(i, end="")
+#     print()
