@@ -56,6 +56,3 @@
 #                 print("b =", b, "k =", k, "t =", t)
 
 # print("Total solutions:", total)
-
-
-# 5 🍎 Euler's Sum of Powers Conjecture 🌶️🌶️
