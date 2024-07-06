@@ -134,3 +134,33 @@
 
 # # Выводим символ с максимальной частотой
 # print(max_char)
+
+# 7 First and last occurrence 🧸
+
+# if "f" =  1 print index
+# if "f" 2 or more print first and last indexes, using " "
+# if there's no "f" print "NO"
+
+# text = input()
+
+# first_index = text.find("f")
+# last_index = text.rfind("f")
+
+# if first_index == -1:
+#   print("NO")
+# elif first_index == last_index:
+#   print(first_index)
+# else:
+#   print(first_index, last_index)
+
+# -------------OR---------------
+
+# s = input()
+# cnt = s.count("f")
+
+# if cnt == 0:
+#     print("NO")
+# elif cnt == 1:
+#     print(s.index("f"))
+# else:
+#     print(s.index("f"), s.rindex("f"))
