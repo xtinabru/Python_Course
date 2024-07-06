@@ -164,3 +164,24 @@
 #     print(s.index("f"))
 # else:
 #     print(s.index("f"), s.rindex("f"))
+
+# 8 Deleting a fragment ⛓️‍💥
+
+# s = input()
+
+# first_index = s.find("h")
+# last_index = s.rfind("h")
+
+# result = s[:first_index] + s[last_index + 1:]
+
+# print(result)
+
+# # ----------------OR --------------
+
+# s = input()
+
+# first = s.find("h")
+# last = s.rfind("h")
+# res = s[:first] + s[last+1:]
+
+# print(res)
