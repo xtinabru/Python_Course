@@ -41,16 +41,29 @@
 
 # 2  Genetics  🧬
 
-genetic_code = input()
+# genetic_code = input()
 
-genetic_code = genetic_code.lower()
+# genetic_code = genetic_code.lower()
 
-adenine_count = genetic_code.count("а")
-guanine_count = genetic_code.count("г")
-cytosine_count = genetic_code.count("ц")
-thymine_count = genetic_code.count("т")
+# adenine_count = genetic_code.count("а")
+# guanine_count = genetic_code.count("г")
+# cytosine_count = genetic_code.count("ц")
+# thymine_count = genetic_code.count("т")
 
-print("Аденин: ", adenine_count)
-print("Гуанин: ", guanine_count)
-print("Цитозин: ", cytosine_count)
-print("Тимин: ", thymine_count)
+# print("Аденин:", adenine_count)
+# print("Гуанин:", guanine_count)
+# print("Цитозин:", cytosine_count)
+# print("Тимин:", thymine_count)
+
+# 3 Stranger Things 📻
+
+# n = int(input())
+# messages_from_odi = 0
+
+# for _ in range(n):
+#     message = input()
+#     count_11 = message.count("11")
+#     if count_11 >= 3:
+#         messages_from_odi += 1
+
+# print(messages_from_odi)
