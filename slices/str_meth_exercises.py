@@ -67,3 +67,15 @@
 #         messages_from_odi += 1
 
 # print(messages_from_odi)
+
+# 4 The quanttity of numbers 📟
+
+# n = input()
+
+# quantity = 0
+
+# for i in n:
+#     if i.isdigit():
+#         quantity += 1
+
+# print(quantity)
