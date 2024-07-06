@@ -39,4 +39,18 @@
 # print(word_count)
 
 
-# 2  Genetics 🔸🔸🔸
+# 2  Genetics  🧬
+
+genetic_code = input()
+
+genetic_code = genetic_code.lower()
+
+adenine_count = genetic_code.count("а")
+guanine_count = genetic_code.count("г")
+cytosine_count = genetic_code.count("ц")
+thymine_count = genetic_code.count("т")
+
+print("Аденин: ", adenine_count)
+print("Гуанин: ", guanine_count)
+print("Цитозин: ", cytosine_count)
+print("Тимин: ", thymine_count)
