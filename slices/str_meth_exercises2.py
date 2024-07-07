@@ -117,15 +117,9 @@
 
 # TASK 3 CHECK NICKNAME 👩🌶️
 
-# nickname = input()
+s = input()
 
-
-# if (
-#     nickname.startswith("@")
-#     and 5 <= len(nickname) <= 15
-#     and nickname[1:].islower()
-#     and nickname[1:].isalnum()
-# ):
-#     print("Correct")
-# else:
-#     print("Incorrect")
+if s.startswith("@") and 5 <= len(s) <= 15 and s[1:].isalnum() and s == s.lower():
+    print("Correct")
+else:
+    print("Incorrect")
