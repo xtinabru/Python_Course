@@ -69,3 +69,122 @@
 #     our_list.append(chr(i) * (i - 96))
 
 # print(our_list)
+
+# Task 4  A list of cubes🔵
+# The program is given a natural number n as input, and then n integers. Write a program that creates a list of their cubes from the given numbers.
+
+# n = int(input())
+
+# list_of_cubes = []
+
+# for _ in range(n):
+#     number = int(input())
+#     list_of_cubes.append(number**3)
+
+# print(list_of_cubes)
+
+# Task 5 List of denominators🔵
+
+# n = int(input())
+
+# denom_list = []
+
+# for i in range(1, n + 1):
+#     if n % i == 0:
+#         denom_list.append(i)
+# print(denom_list)
+
+# Task 6 Sum of two 🔵
+
+# n = int(input())
+
+# numbers = []
+
+# for _ in range(n):
+#     number = int(input())
+#     numbers.append(number)
+
+# sum_list = []
+
+# for i in range(n - 1):
+#     sum_list.append(numbers[i] + numbers[i + 1])
+
+# print(sum_list)
+
+# or
+
+# Считываем количество чисел
+# n = int(input())
+
+# # Считываем все числа и добавляем их в список
+# numbers = [int(input()) for _ in range(n)]
+
+# # Создаем список сумм соседних чисел
+# sum_list = [numbers[i] + numbers[i + 1] for i in range(n - 1)]
+
+# # Выводим результат
+# print(sum_list)
+
+# Task 7 Delete odd indexes 🔵
+
+# n = int(input())
+# numbers = []
+
+# for i in range(n):
+#     number = int(input())
+#     numbers.append(number)
+
+# i = 1
+# while i < len(numbers):
+#     del numbers[i]
+#     i += 1
+
+# print(numbers)
+
+# or
+
+# n = int(input())
+# seq = []
+
+# for _ in range(n):
+#     cur = int(input())
+#     seq.append(cur)
+
+# print(seq[::2])
+
+# Task 8 k-th letter of the word 🌶️🌶️ 🔵
+
+# n = int(input())
+# strings = [input() for _ in range(n)]
+
+# k = int(input())
+# result = ""
+
+# for string in strings:
+#     if len(string) >= k:
+#         result += string[k - 1]
+
+# print(result)
+
+# Task 9. Characters of all lines🔵
+
+# n = int(input())
+# strings = [input() for _ in range(n)]
+# result = []
+
+# for string in strings:
+#     for char in string:
+#         result.append(char)
+
+# print(result)
+
+# or
+
+# n = int(input())
+# seq = []
+
+# for _ in range(n):
+#     s = input()
+#     seq.extend(s)
+
+# print(seq)
