@@ -42,8 +42,8 @@
 
 # 📌 Since strings contain characters just as lists contain elements, we can use string unpacking in the same way we use list unpacking.
 
-s = "Python"
+# s = "Python"
 
-print(*s)
-print()
-print(*s, sep="\n")
+# print(*s) # P y t h o n
+# print() # nothing
+# print(*s, sep="\n")  # each on a separate line
