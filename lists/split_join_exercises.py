@@ -9,7 +9,8 @@
 # Ex 3🩵 What will the code below show?
 
 # s = "a     b c"
-# print(s.split(" ")) # ['a', '', '', '', '', 'b', 'c']
+# print(s.split(" "))
+# ['a', '', '', '', '', 'b', 'c']
 
 # Ex 4🩵 What will the code below show?
 
